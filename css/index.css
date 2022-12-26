@@ -1,0 +1,280 @@
+li {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    font-family: -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #666;
+}
+
+.app {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background-color: #333333;
+}
+
+.app li {
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.app li:nth-child(1) {
+    width: 8%;
+}
+
+.app li:nth-child(2) {
+    width: 10%;
+}
+
+.app li:nth-child(3) {
+    width: 57%;
+}
+
+.app li:nth-child(4) {
+    width: 25%;
+    height: 45px;
+    background-color: #f63515;
+}
+
+.app li .close {
+    width: 10px;
+    height: 10px;
+}
+
+.app li .logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.app li p {
+    color: white;
+
+}
+
+.search {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    background-color: #c82519;
+    position: relative;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+    z-index: 3;
+}
+
+.search .btn {
+    width: 36px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    
+}
+
+.search .btn::before {
+    content: "";
+    background-image: url(下载.png);
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin: 16px 0px 0px 14px;
+    background-size: 20px 18px;
+}
+
+.search .log {
+    width: 45px;
+    height: 44px;
+    position: absolute;
+    right: 0px;
+}
+
+.search .log::before {
+    content: "";
+    background-image: url(人物.png);
+    display: block;
+    width: 20px;
+    height: 22px;
+    margin: 10px 12px 12px 10px;
+    background-size: 20px 22px;
+}
+
+.search .search_label {
+    width: 77%;
+    height: 30px;
+    position: relative;
+    margin: auto;
+    margin-top: 7px;
+    border-radius: 15px;
+    background-color: white;
+    display: block;
+}
+
+/* .search .search_label .input {
+    display: block;
+    
+    border: none;
+} */
+.search .search_label .jd{
+    width: 20px;
+    height: 15px;
+    display: block;
+    float:left;
+    margin:8px 8px 0px 15px;
+    padding-right:8px;
+    border-right: 1px gray solid;
+}
+.search .search_label .sprites{
+    float:left;
+    width: 18px;
+    height: 15px;
+    background-image: url(jd-sprites.png);
+    background-position: -92px 0px;
+    background-size: 225px;
+    margin:8px 0px 0px 0px;
+}
+.search .search_label a{
+    display: block;
+    width: 70%;
+    float: left;
+    line-height: 30px;
+    margin-left:10px;
+    color:#757779;
+}
+.nav{
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+}
+.nav div{
+    display: block;
+    width: 100%;
+    height: 70px;;
+    background-color: #c82519;
+}
+.nav div img{
+    display: block;
+    margin:auto;
+    width: 94%;
+}
+.nav div ul{
+    display: block;
+    width: 55px;
+    height: 5px;
+    margin:auto;
+    margin-top:-15px;
+    position: relative;
+}
+
+.nav div ul li{
+    display: block;
+    float: left;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+    margin-left:5px;
+}
+.nav div ul li:nth-child(1){
+    margin:0px;
+    background-color: #c82519;
+}
+.nav-1{
+    width: 100%;
+}
+.nav-1  a{
+    width: 20%;
+    height: 20%;
+    display: block;
+    float:left;
+    padding:auto;
+    box-sizing: border-box;
+}
+.nav-1 a img{
+    width: 53%;
+    margin:auto;
+    display: block;
+    margin-top:20%;
+}
+.nav-1 a p{
+    display: block;
+    float: left;
+    color: black;
+    margin-left:20%;
+    font-size: 125%;;
+}
+.shop{
+    width: 100%;
+}
+.shop .shop-1{
+    width: 48%;
+    background-color: white;
+    float: left;
+    border-radius: 3px;
+    margin:5px 1% 0px 1%;
+    position: relative;
+}
+.shop .shop-1 img{
+    width: 100%;
+}
+.shop .shop-1 .content{
+    font-size: 130%;
+    margin-left:5%;
+}
+.shop .shop-1 .mon{
+    color:#ff4142;
+    margin-top:5px;
+    font-size: 135%;
+    margin-left:5%;
+}
+.shop .shop-1 .look{
+    color:#999999;
+    margin-left:5%;
+}
+.shop .shop-1 .simple{
+    color:black;
+    font-size:15px;
+    width: 60px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    right: 10%;
+    bottom:5px;
+}
+footer{
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    background-color: white;
+}
+footer div{
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+
+}
+footer div img{
+    width: 60px;
+    display: block;
+    margin:auto;
+}
